@@ -1,6 +1,6 @@
 # Introduction
 
-This document provide high level overview and explains the application architecture for Learning Management System for multiple platform including but not limited to web based application and native mobile application. 
+This document provide high level overview and explains the application architecture for Learning Management System for multiple platform including but not limited to web based application and native mobile application. This document use [C4 Model](https://c4model.com/) to describe each step of architecture explaination from high-level view into detailed view
 
 ## Chapter Explanation
 
