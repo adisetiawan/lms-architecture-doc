@@ -13,7 +13,7 @@ TOC = --toc --toc-depth 2
 METADATA_ARGS = --metadata-file $(METADATA)
 IMAGES = $(shell find images -type f)
 TEMPLATES = $(shell find templates/ -type f)
-COVER_IMAGE = images/cover.png
+COVER_IMAGE = images/cover.jpg
 MATH_FORMULAS = --webtex
 
 # Chapters content

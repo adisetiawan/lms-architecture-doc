@@ -1,11 +1,11 @@
 ---
-title: My book title
-author: Daniel Herzog
+title: LMS Architecture
+author: Adi Setiawan
 rights: MIT License
 lang: en-US
-tags: [pandoc, book, my-book, etc]
+tags: [software, architecture, application]
 abstract: |
-  Your summary.
+  This document provide application architecture document for Learning Management System described using C4 Model method.
 mainfont: DejaVu Sans
 
 # Filter preferences:
