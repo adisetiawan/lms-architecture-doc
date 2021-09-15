@@ -6,7 +6,6 @@ lang: en-US
 tags: [software, architecture, application]
 abstract: |
   This document provide application architecture document for Learning Management System described using C4 Model method.
-mainfont: DejaVu Sans
 
 # Filter preferences:
 # - pandoc-crossref

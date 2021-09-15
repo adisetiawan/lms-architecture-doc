@@ -1,74 +1,78 @@
 # Introduction
 
-This is the first paragraph of the introduction chapter.
+This document provide high level overview and explains the application architecture for Learning Management System for multiple platform including but not limited to web based application and native mobile application. 
 
-## First: Images
+## Chapter Explanation
 
-This is the first subsection. Please, admire the gloriousnes of this seagull:
+* Chapter 2 provide context diagram for high-level overview in related with Actor or persona which interact with the whole system.
+* Chapter 3 provide container diagram for more detailed interaction of software architecture and system flow for each container.
+* Chapter 4 provide component diagram to zoom in for each container and how it related to each other and interaction between components inside and outside container.
+* Chapter 5 provide class diagram for entity relationship and also system landscape deployment diagram.
+* Chapter 6 provide timelines and resource allotment for development phase.
+* Chapter 7 provide technology stack choices and references.
 
-![A cool seagull.](images/seagull.png)
+## Goals and Constraints
 
-A bigger seagull:
+* The system should be able to scale horizontally in real-time for any amount of traffic including spikes during N periods of times.
+* The system should use any open source technologies and/or frameworks to avoid third party vendor lock.
+* The system should be able to anticipate any future changes without doing major rewrite or refactors.
+* The system should be resilient and secured by default with proper CI/CD deployment.
 
-![A cool big seagull.](images/seagull.png){ width=320px }
+## Features Overview
 
-## Second: Tables
+Learning Management System is a platform for organizations such schools, campuses or education institution to host their whole operation into one single platform which can be accessed either via web based application or native mobile application.
 
-This is the second subsection.
+### Core Features
 
+* Student/Mentee management
+* Teacher/Mentor management
+* Class/Study group management
+* Assignment/quiz management
+* Video conference
+* Audio conference
+* Event calendar
+* Payment system
+* Notification system
+* Multi languages interface
+* Search system
 
-Please, check [First: Images] subsection.
+### Actors
 
-Please, check [this](#first-images) subsection.
+* Student/Mentee
+* Teacher/Mentor
+* Class/Study Group Administrator or Organization Owner
+* Class/Study Group Moderator
+* Parent/Viewer
+* Super Administrator
 
-| Index | Name |
-| ----- | ---- |
-| 0     | AAA  |
-| 1     | BBB  |
-| ...   | ...  |
+### User Features
 
-Table: This is an example table.
+* Registration using social media accounts
+* Membership with payment subscription
 
-## Third: Equations
+### Class/Study Group Features
 
-Formula example: $\mu = \sum_{i=0}^{N} \frac{x_i}{N}$
+* Visibility can be: public (searchable) or private (can be accessed within organization only).
+* Each Class/Study group can have newsfeed/announcements, event calendar (for video conference audio conference, assignments/quizzes deadline).
+* Each Class/Study group can have resource learning (documents, e-books, videos) for student to view, watch or download.
+* Search system for resource learning and newsfeed.
+* Notification for upcoming assignments, quizzes, new announcements, and test result.
 
-Now, full size:
+### Assignments/quizzes features
 
-$$\mu = \sum_{i=0}^{N} \frac{x_i}{N}$$
+* Online test means the student should run the test in real-time with limited n times to finished.
+* Offline test means assignments with specific deadline to be collected and can be worked offline by upload the test to the system.
+* Teacher/mentor will receive notification if there are any completed assignments.
+* Student and/or parents will receive notification if the result come-up
 
-And a code sample:
+### Resource Learning features
 
-```rb
-def hello_world
-  puts "hello world!"
-end
+* Class/Study group moderator or/and teacher can upload any document for learning purposes and pin those documents the most important ones.
+* Student can download or view online
+* Student can search resource learning based on keywords or document types
+* Student will receive notification if there are new document uploaded
 
-hello_world
-```
+### Event Calendar
 
-Check these unicode characters: ǽß¢ð€đŋμ
-
-## Fourth: Cross references
-
-These cross references are disabled by default. To enable them, check the
-_[Cross references](https://github.com/wikiti/pandoc-book-template#cross-references)_
-section on the README.md file.
-
-Here's a list of cross references:
-
-- Check @fig:seagull.
-- Check @tbl:table.
-- Check @eq:equation.
-
-![A cool seagull](images/seagull.png){#fig:seagull}
-
-$$ y = mx + b $$ {#eq:equation}
-
-| Index | Name |
-| ----- | ---- |
-| 0     | AAA  |
-| 1     | BBB  |
-| ...   | ...  |
-
-Table: This is an example table. {#tbl:table}
+* Display all events and deadlines including assignments created and deadlines, video or audio conference event.
+* Integration with third party calendar such Google calendar, Microsoft calendar.
